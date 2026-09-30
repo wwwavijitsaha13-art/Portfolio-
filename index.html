@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avijit Saha | AI & Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Avijit Saha</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle dark/light theme">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="section hero">
+      <div class="container">
+        <h1>Hi, I'm Avijit Saha</h1>
+        <h2>Computer Science Engineer | AI, ML & Web Developer</h2>
+        <p>Passionate about sequence models, generative AI, cyber security, and building intuitive user interfaces.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          <a href="assets/resume.pdf" download class="btn btn-outline">Download Resume</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/wwwavijitsaha13-art" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/avijit-saha-0a104628b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="bio">
+            <p>I am a highly motivated B.Tech student pursuing Computer Science & Engineering with a specialization in Artificial Intelligence and Machine Learning at the Institute of Engineering & Management. I have cultivated a strong, comprehensive foundation in Python development, deep learning, and advanced neural network architectures. My technical journey is driven by a deep fascination with sequence models and generative AI, paired with a robust interest in cybersecurity disciplines such as cryptography and system security frameworks.</p>
+            
+            <p>Beyond backend algorithms and security, I actively explore Human-Computer Interaction (HCI) concepts, including performance models like Fitts's Law, to ensure the interfaces I build are as intuitive as they are technically sound. I thrive in research-driven environments and am dedicated to continuous professional growth, eagerly taking on challenges that push the boundaries of my problem-solving and creative skills. My immediate academic goals include drafting and submitting a comprehensive research paper to a Scopus-indexed IEEE journal.</p>
+            
+            <h3>Education</h3>
+            <p><strong>Institute of Engineering & Management</strong><br>B.Tech in Computer Science & Engineering (AI & ML)<br>CGPA: 8.0 (up to 6th sem)</p>
+            <p><strong>Calcutta Airport English High School (H.S.)</strong><br>Secondary (Score: 86.71%) and Higher Secondary Education (Score: 74.16%)</p>
+
+            <h3>Experience & Research</h3>
+            <p><strong>Research Development Intern</strong><br>Institute of Engineering and Management (IEDC), Kolkata<br>May 2025 – June 2025<br>Focused on real-world implementations of machine learning models. 
+                Under the invaluable guidance and mentorship of Dr. Goutam Kumar Sahoo and Debdutta Ma'am, I co-authored a published paper titled <em>'A Machine Learning-Based Criminal Identification System Using 
+                Cell Tower Data and GIS'</em>, which was featured in the Proceedings of the International Symposium on Smart Systems and Computing (iSSSC 2025).
+                <br>DOI: <a href="https://doi.org/10.1109/iSSSC66652.2025.11389056" target="_blank" rel="noopener noreferrer">10.1109/iSSSC66652.2025.11389056</a></p>
+        
+
+            <h3>Certifications & Tools</h3>
+            <ul>
+              <li>Human-Computer Interaction (IIIT Delhi)</li>
+              <li>AWS Cloud Practitioner Essentials (AWS)</li>
+              <li>Google Data Analytics (GOOGLE)</li>
+              <li>Proficient in Microsoft Word, Excel, and PowerPoint</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Skills & Tools</h2>
+        <div id="skills-container" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai">AI / ML</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="security">Security</button>
+        </div>
+        <div id="projects-container" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-layout">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Ready to collaborate on innovative AI models or secure web frameworks? Drop me a message.</p>
+          </div>
+          <form id="contact-form" class="contact-form" novalidate>
+            <input type="text" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required aria-describedby="name-error">
+              <span id="name-error" class="error-text" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required aria-describedby="email-error">
+              <span id="email-error" class="error-text" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
+              <span id="subject-error" class="error-text" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+              <div class="char-counter"><span id="char-count">0</span>/500</div>
+              <span id="message-error" class="error-text" aria-live="polite"></span>
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-primary">Send Message</button>
+            <div id="form-success" class="success-message" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Avijit Saha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
